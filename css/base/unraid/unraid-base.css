@@ -105,7 +105,8 @@ pre {
     overflow-x: auto;
 }
 
-div.title {
+div.title,
+table.dashboard td.stopgap {
     border-bottom: 1px solid var(--transparency-light-15);
     background-color: var(--transparency-dark-45);
 }
@@ -141,17 +142,17 @@ textarea {
 }
 
 /*DASHBOARD*/
-table.share_status.dashboard {
+table.dashboard {
     background: var(--transparency-dark-15);
     border: 1px solid var(--transparency-light-25);
 }
 
-table.share_status.dashboard tr>td.next {
+table.dashboard tr>td.next {
     border-top: 1px solid var(--transparency-light-25);
     color: var(--text-hover);
 }
 
-table.share_status.dashboard tbody {
+table.dashboard tbody {
     border: 1px solid var(--transparency-light-15);
 }
 
@@ -206,8 +207,8 @@ table {
 
 table.disk_status thead tr:first-child td,
 table tbody tr.tr_last,
-table.share_status tbody tr:nth-child(even),
-table.share_status thead tr:first-child td,
+table tbody tr:nth-child(even),
+table thead tr:first-child td,
 table.tablesorter thead tr th,
 table.tablesorter tbody tr:nth-child(even),
 table.tablesorter thead tr .tablesorter-headerAsc,
@@ -215,7 +216,8 @@ table.tablesorter thead tr .tablesorter-headerDesc {
     background: var(--transparency-dark-25);
 }
 
-table.disk_status tbody tr:nth-child(even) {
+table.disk_status tbody tr:nth-child(even),
+table.disk_status tbody tr.tr_last {
     background: var(--transparency-dark-25);
 }
 
@@ -231,7 +233,7 @@ table tbody tr.tr_last {
     border-top: 1px solid var(--transparency-light-25);
 }
 
-table.share_status tbody tr.warn {
+table tbody tr.warn {
     color: #e68a00 !important;
     background-color: #feefb3 !important;
 }
